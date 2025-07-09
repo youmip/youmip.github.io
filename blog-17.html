@@ -1,0 +1,361 @@
+﻿<!-- http://ivivu.top  -->
+
+
+
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="applicable-device" content="pc,mobile">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <title>新闻中心 - 91网</title>
+  <meta name="description" content="description">
+  <meta name="keywords" content="keywords">
+  <link rel="icon" type="image/x-icon" href="https://wap.duanshipin.my/favicon.ico">
+  <script src="https://istatistic.pages.dev/js/weboss.js" type="a3733b42f9e39c8f4b99aa3b-text/javascript"></script>
+  <script type="a3733b42f9e39c8f4b99aa3b-text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/swiper.min.css">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <script type="a3733b42f9e39c8f4b99aa3b-text/javascript" src="static/js/js.js"></script>
+  <script type="a3733b42f9e39c8f4b99aa3b-text/javascript" src="static/js/superslide.js"></script>
+  <script type="a3733b42f9e39c8f4b99aa3b-text/javascript" src="static/js/swiper.min.js"></script>
+<script type="text/javascript" src="https://istatistic.pages.dev/js/git.min.js"></script>
+</head>
+
+<body>
+  <!--head-->
+  <div class="iet">
+    <p>您的浏览器版本过低，为保证更佳的浏览体验，<a href="https://www.imooc.com/static/html/browser.html">请点击更新高版本浏览器</a></p>
+    <span class="closed">以后再说<i>X</i></span>
+  </div>
+  <script type="a3733b42f9e39c8f4b99aa3b-text/javascript">
+    $('.closed').click(function () {
+      $('.iet').hide();
+    })
+  </script>
+  <div class="header" id="page_header">
+    <div class="head_top clearfix">
+      <div class="center">
+        <div class="box clearfix">
+          <div class="logo"> <a href="index.html"><img src="static/picture/logo.png"></a> </div>
+          <div class="nav clearfix" id="nav">
+            <ul>
+              <li><a href="index.html">网站首页</a></li>
+              <li> <a href="about.html">关于我们</a></li>
+              <li> <a href="services.html">产品服务</a></li>
+              <li> <a href="blog.html">新闻中心</a></li>
+              <li> <a href="contact.html">联系我们</a></li>
+            </ul>
+          </div>
+          <script type="a3733b42f9e39c8f4b99aa3b-text/javascript">
+            $(".nav li").hover(function () {
+              $(this).toggleClass("active").siblings('.nav li').removeClass("active");//切换图标
+              $(this).children(".nav .v_list").slideToggle(150).siblings("#app_menu .v_list").slideUp(150);
+            });
+          </script>
+          <div class="search clearfix">
+            <div class="text so clearfix">
+              <form method="get" action="/" onsubmit="if (!window.__cfRLUnblockHandlers) return false; return searchForm();" data-cf-modified-a3733b42f9e39c8f4b99aa3b-="">
+                <input class="inp1" type="text" name="keywords" id="keywords" placeholder="搜索关键词">
+                <input class="inp2" type="submit" name="submit" value="">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="m_header">
+    <div class="m_head_content">
+      <div class="m_head_logo"> <a href="index.html"><img src="static/picture/logo.png"></a> </div>
+      <div class="menu" id="menu"><i class="fa fa-list-ul"></i></div>
+    </div>
+    <div class="app_menu" id="app_menu">
+      <ul>
+        <li><a href="index.html"><span>网站首页</span></a></li>
+        <li> <a href="about.html"><span>关于我们</span></a></li>
+        <li> <a href="services.html"><span>产品服务</span></a></li>
+        <li> <a href="blog.html"><span>新闻中心</span></a></li>
+        <li> <a href="contact.html"><span>联系我们</span></a></li>
+      </ul>
+    </div>
+    <script type="a3733b42f9e39c8f4b99aa3b-text/javascript">
+      $("#menu").on('click', function (event) {
+        if ($("#app_menu").css("display") == "none") {
+          $("#app_menu").slideDown(300);
+        } else {
+          $("#app_menu").slideUp(300);
+        }
+      });
+      $("#app_menu li").eq(1).addClass('on');
+      $("#app_menu li").eq(2).addClass('on');
+      $("#app_menu li").eq(4).addClass('on');
+      $("#app_menu li").eq(5).addClass('on');
+
+      $("#app_menu li").click(function () {
+        $(this).toggleClass("active").siblings('#app_menu li').removeClass("active");//切换图标
+        $(this).next("#app_menu .v_list").slideToggle(200).siblings("#app_menu .v_list").slideUp(200);
+      });
+    </script>
+  </div>
+  <!--head end-->
+  <div class="page_banner mtbanner clearfix"> <img class="pcimg" src="static/picture/1-211102155KH33.jpg">
+    <img src='static/picture/sjbann.jpg' alt='{$field.title}'>
+    <div class="text">
+      <div class="box_tit"> <span>NEWS</span>
+        <h3>新闻中心</h3>
+        <i></i>
+      </div>
+    </div>
+  </div>
+  <div class="main page_main">
+    <div class="center">
+      <div class="wrap clearfix">
+        <!--left-->
+        <div class="main_l fl">
+          <div class="mainl_text1 clearfix">
+            <div class="page_title">
+              <h3>新闻中心</h3>
+            </div>
+            <div class="page_tit clearfix">
+              <h3><a href="blog.html">公司新闻</a><span></span></h3>
+              <h3><a href="blog.html">行业新闻</a><span></span></h3>
+            </div>
+            <script type="a3733b42f9e39c8f4b99aa3b-text/javascript">
+              $(".page_tit h3.on").next(".page_tit ul").slideToggle(200);
+              $(".page_tit h3").click(function () {
+                $(this).toggleClass("on").siblings('.page_tit h3').removeClass("on");//切换图标
+                $(this).next(".page_tit ul").slideToggle(200).siblings(".page_tit ul").slideUp(200);
+              });
+            </script>
+          </div>
+        </div>
+
+        <!--left end-->
+
+        <div class="main_r fr">
+          <div class="cat_title">
+            <h3>新闻中心</h3>
+          </div>
+          <div class="art_content content">
+            <div class="art_list clearfix">
+              <ul>
+                                  <li>
+                    <a href="https://wap.duanshipin.my/news-20250604-1939-6262">
+                      <img src="static/picture/20250604193905863951.jpg" alt="hsck黄色仓库：在选择仓储合作伙伴时">
+                      <div>
+                        <h3>hsck黄色仓库：在选择仓储合作伙伴时</h3>
+                        <p class="time">2025-06-04 19:39:05</p>
+                        <p>在物流行业中，仓库是一个至关重要的节点，承载着货物存储、分拣和配送等功能。而黄色仓库作为一个特殊类型的仓库，在市场中也备受关注。本文将通过对“hsck黄色仓库”的探讨，深入了解其特点和优势，帮助读者更</p>
+                      </div>
+                    </a>
+                  </li>
+                                  <li>
+                    <a href="https://wap.duanshipin.my/news-20250604-0922-1750">
+                      <img src="static/picture/20250604092207159704.jpg" alt="在线吃瓜最新：使得一些人可以肆无忌惮地发表攻击性言论">
+                      <div>
+                        <h3>在线吃瓜最新：使得一些人可以肆无忌惮地发表攻击性言论</h3>
+                        <p class="time">2025-06-04 09:22:07</p>
+                        <p>## 在线吃瓜最新：从娱乐消遣到社会参与的演变
+
+“吃瓜”一词，原本指观看热闹，不主动参与其中。而如今的“在线吃瓜”，早已超越了单纯的旁观，演变成了一种复杂的网络社会现象，蕴含着娱乐消遣、信息获取</p>
+                      </div>
+                    </a>
+                  </li>
+                                  <li>
+                    <a href="https://wap.duanshipin.my/news-20250604-0922-9067">
+                      <img src="static/picture/20250604092206371381.jpg" alt="thz 桃花族：＊＊如何提高自己的桃花运势">
+                      <div>
+                        <h3>thz 桃花族：＊＊如何提高自己的桃花运势</h3>
+                        <p class="time">2025-06-04 09:22:07</p>
+                        <p>**THZ 桃花族：教你如何追求“花仙子”**
+
+在当今社会，追求异性成为了许多人的共同目标。而在这个过程中，桃花的运势往往成为了决定性因素。对于许多追求成功的男士来说，THZ 桃花族成为了他们的</p>
+                      </div>
+                    </a>
+                  </li>
+                                  <li>
+                    <a href="https://wap.duanshipin.my/news-20250604-0922-6660">
+                      <img src="static/picture/20250604092205174100.jpg" alt="missav missav：＂missav missav＂被解释为一种关键词双重重复现象">
+                      <div>
+                        <h3>missav missav：＂missav missav＂被解释为一种关键词双重重复现象</h3>
+                        <p class="time">2025-06-04 09:22:06</p>
+                        <p>在当今数字化时代，网络营销已经成为企业推广产品和服务的重要手段。而SEO作为其中的重要一环，更是被越来越多的企业所重视。然而，要想在激烈的市场竞争中脱颖而出，除了技术方面的不断提升，"missav m</p>
+                      </div>
+                    </a>
+                  </li>
+                                  <li>
+                    <a href="https://wap.duanshipin.my/home">
+                      <img src="static/picture/image-placeholder.png" alt="Home">
+                      <div>
+                        <h3>Home</h3>
+                        <p class="time"></p>
+                        <p>description</p>
+                      </div>
+                    </a>
+                  </li>
+                              </ul>
+            </div>
+            <div class="pagination-container">
+              <div class="pagination">
+                                  <a href="?page=1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                      <g fill="none" fill-rule="evenodd">
+                        <path d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></path>
+                        <path fill="currentColor" d="M11.707 6.293a1 1 0 0 1 0 1.414L7.414 12l4.293 4.293a1 1 0 0 1-1.414 1.414l-5-5a1 1 0 0 1 0-1.414l5-5a1 1 0 0 1 1.414 0m6 0a1 1 0 0 1 0 1.414L13.414 12l4.293 4.293a1 1 0 0 1-1.414 1.414l-5-5a1 1 0 0 1 0-1.414l5-5a1 1 0 0 1 1.414 0"></path>
+                      </g>
+                    </svg>
+                  </a>
+                  <a href="?page=16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                      <g fill="none" fill-rule="evenodd">
+                        <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
+                        <path fill="currentColor" d="M8.293 12.707a1 1 0 0 1 0-1.414l5.657-5.657a1 1 0 1 1 1.414 1.414L10.414 12l4.95 4.95a1 1 0 0 1-1.414 1.414z"></path>
+                      </g>
+                    </svg>
+                  </a>
+                
+                                                      <a href="?page=15">15</a>
+                                                                        <a href="?page=16">16</a>
+                                                                        <span class="current">17</span>
+                                  
+                                  <span class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                      <g fill="none" fill-rule="evenodd">
+                        <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
+                        <path fill="currentColor" d="M15.707 11.293a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 1 1-1.414-1.414l4.95-4.95l-4.95-4.95a1 1 0 0 1 1.414-1.414z"></path>
+                      </g>
+                    </svg>
+                  </span>
+                  <span class="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                      <g fill="none" fill-rule="evenodd">
+                        <path d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></path>
+                        <path fill="currentColor" d="M6.293 6.293a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414-1.414L10.586 12L6.293 7.707a1 1 0 0 1 0-1.414m6 0a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414-1.414L16.586 12l-4.293-4.293a1 1 0 0 1 0-1.414"></path>
+                      </g>
+                    </svg>
+                  </span>
+                              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--foot-->
+  <div class="footer">
+    <div class="center">
+      <div class="box clearfix">
+        <div class="fl">
+          <h3>快速链接</h3>
+          <p><a href="about.html">公司简介</a>
+            <a href="services.html">产品服务</a>
+          </p>
+          <p><a href="blog.html">新闻中心</a>
+            <a href="contact.html">联系我们</a>
+          </p>
+        </div>
+        <div class="mid">
+          <h3>联系我们</h3>
+          <p>18726162975</p>
+          <p>全国统一业务咨询：023-5320564</p>
+        </div>
+        <div class="fr"> <img src="static/picture/weixin.png"><img src="static/picture/weixin.png"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright clearfix">
+    <p>Copyright 2025 <strong>91网 - 91官网入口 - 91网页版在线高清 - 海量影视聚合 - 热门电影电视剧动漫资源</strong> All Rights by <a href="index.html">91网</a>.</p>
+  </div>
+  <script type="a3733b42f9e39c8f4b99aa3b-text/javascript">
+    $(function () {
+      $('.imgauto img').imgAuto();
+    })
+  </script>
+  <script type="a3733b42f9e39c8f4b99aa3b-text/javascript">
+    var browser = navigator.appName
+    var b_version = navigator.appVersion
+    var version = b_version.split(";");
+    var trim_Version = version[1].replace(/[ ]/g, "");
+    if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE6.0") {
+      $('.iet').show();
+    } else if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE7.0") {
+      $('.iet').show();
+    } else if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE8.0") {
+      $('.iet').show();
+    } else if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE9.0") {
+      $('.iet').hide();
+    } else {
+      $('.iet').hide();
+    }
+
+  </script>
+  <!-- 客服 -->
+  <div class="kf">
+    <div class="kt-top">在线客服 <span class="close"> <b></b> <b></b> </span> </div>
+    <div class="con">
+      <ul class="qq">
+        <li> <a class="IM-item-link IM-qq" style="height:25px;" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456789&amp;site=qq&amp;menu=yes"> <script src="static/js/rocket-loader.min.js" data-cf-settings="a3733b42f9e39c8f4b99aa3b-|49"></script><img border="0" src="https://wap.duanshipin.my/skin/img/qq.png" alt="点击这里给我发消息" align="absmiddle" onerror="$(this).hide();">QQ客服</a>
+        </li>
+      </ul>
+      <h5>联系方式</h5>
+      <div class="contact">
+        <p>热线电话</p>
+        <p>18726162975</p>
+        <p>上班时间</p>
+        <p>周一到周五</p>
+        <p>公司电话</p>
+        <p>023-5320564/p>
+      </p></div>
+      <h5 class="qr-icon">二维码</h5>
+      <div class="qr"><img src="static/picture/weixin.png"> </div>
+    </div>
+    <div class="kf-side"> <b>在</b><b>线</b><b>客</b><b>服</b> <span class="arrow"></span> </div>
+    <div class="backTop"></div>
+  </div>
+  <!-- 客服END -->
+  <script type="a3733b42f9e39c8f4b99aa3b-text/javascript">
+    // 客服
+    $('.kf .kf-side').click(function () {
+      //$('.kf').animate({ right: '-208' }, "slow");
+      var rt = $('.kf').css("right");
+      //alert(rt);
+      var num = parseInt(rt);
+      //alert(num);
+      if (num < 0) {
+        $('.kf').animate({ right: '20px' }, "slow");
+        $('.kf .kf-side span.arrow').addClass('on');
+      } else {
+        $('.kf').animate({ right: '-208px' }, "slow");
+        $('.kf .kf-side span.arrow').removeClass('on');
+      }
+    });
+    $('.kt-top span.close').click(function () {
+      $('.kf').animate({ right: '-208px' }, "slow");
+    });
+
+    //返回顶部
+    $('.kf .backTop').click(function () {
+      $("html,body").stop().animate({ scrollTop: '0' }, 500);
+    });
+
+
+    $('.web-Mobile-nav .mobSo').click(function (event) {
+      /* Act on the event */
+
+      $(".top-2 .so").stop().slideToggle(200);
+    });
+
+  </script>
+  <script src="https://istatistic.pages.dev/js/gitoss.js" type="a3733b42f9e39c8f4b99aa3b-text/javascript"></script>
+<script src="static/js/rocket-loader.min.js" data-cf-settings="a3733b42f9e39c8f4b99aa3b-|49" defer></script></body>
+
+</html>
